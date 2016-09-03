@@ -1,0 +1,120 @@
+// -- CUSTOM VARIABLES ---------------------------------------------------------
+
+// Colors
+$deep-purple: hsl(297, 100%, 34%);
+$dark-blue: hsl(196, 100%, 37%);
+$dark-yellow: hsl(57, 100%, 43%);
+$fire-orange: hsl(25, 100%, 42%);
+$red-pink: hsl(344, 98%, 60%);
+$bright-green: hsl(172, 100%, 41%);
+
+// Footer
+$footer-height: 65px;
+
+
+// -- OVERRIDING BOOTSTRAP VARIABLES -------------------------------------------
+// Commented out lines are untouched lines directly copied from bootstrap sass.
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+// $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+// $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        'Raleway', sans-serif;
+
+$font-size-base:          18px;
+// $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+// $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6 * 0.7)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15 * 0.7)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7 * 0.85 * 0.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25 * 0.7)) !default; // ~18px
+$font-size-h5:            ceil(($font-size-base * 1 * 0.7)) !default;
+$font-size-h6:            ceil(($font-size-base * 0.85 * 0.7)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+// $line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+// $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    'Big John', sans-serif;
+// $headings-font-weight:    500 !default;
+// $headings-line-height:    1.1 !default;
+// $headings-color:          inherit !default;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-height:                    80px;
+// $navbar-margin-bottom:             $line-height-computed !default;
+// $navbar-border-radius:             $border-radius-base !default;
+// $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+// $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+// $navbar-collapse-max-height:       340px !default;
+
+// $navbar-default-color:             #777 !default;
+$navbar-default-bg:                #fff;
+$navbar-default-border:            #f7f6eb;
+
+// Navbar links
+$navbar-default-link-color:                #1f1f1d;
+$navbar-default-link-hover-color:          #1f1f1d;
+// $navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         #1f1f1d;
+$navbar-default-link-active-bg:            transparent;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;
+
+// Navbar brand label
+// $navbar-default-brand-color:               $navbar-default-link-color !default;
+// $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+// $navbar-default-brand-hover-bg:            transparent !default;
+
+// Navbar toggle
+// $navbar-default-toggle-hover-bg:           #ddd !default;
+// $navbar-default-toggle-icon-bar-bg:        #888 !default;
+// $navbar-default-toggle-border-color:       #ddd !default;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+// $grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         20px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+// $grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+// $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1050px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;

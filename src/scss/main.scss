@@ -1,0 +1,99 @@
+@import "variables";
+
+@import "bootstrap";
+@import "font-awesome";
+
+@import "fonts";
+@import "mixins";
+
+
+body {
+    padding-top: $navbar-height + 20px;
+}
+
+@include breakpoint-and-down(xs) {
+    h1 {
+        font-size: floor($font-size-h1 * 0.85);
+    }
+    h2 {
+        font-size: floor($font-size-h2 * 0.85);
+    }
+    h3 {
+        font-size: floor($font-size-h3 * 0.85);
+    }
+}
+
+.navbar {
+    border-bottom-width: 3px;
+
+    .navbar-brand {
+        font-family: "Big John";
+        font-weight: 600;
+        font-size: 30px;
+
+        @include breakpoint-and-down(xs) {
+            font-size: 25px;
+        }
+    }
+
+    .navbar-nav {
+        font-family: "Big John";
+        font-weight: 100;
+        font-size: 20px;
+        
+        // Centering the dropdown links in the mobile menu 
+        li {
+            text-align: center;
+            a {
+                padding-left: 10px;
+                display: inline-block;
+            }
+        }
+
+        .nav-underline {
+            margin: 0 auto;
+            width: 0;
+            height: 4px;
+            margin-bottom: -2px;
+            border-bottom: 2px solid hsl(297, 100%, 34%);
+        }
+
+        li.active {
+            .nav-underline {
+                width: 90%;
+            }
+        }
+
+        li a:not(.active):hover {
+            .nav-underline {
+                width: 90%;
+            }        
+        }
+    }
+}
+
+#schedule {
+    .week {
+        margin-bottom: 40px;
+
+        .week-title {
+            // Necessary to get the :after effect underline
+            display: inline-block;
+        }
+        .week-title:after {
+            content: "";
+            display: block;
+            background: hsl(34, 100%, 50%);
+            height: 2px;
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+
+        // .day-title {
+        //     border-bottom: 2px solid hsl(34, 100%, 50%);
+        //     display: inline-block;
+        //     padding-bottom: 5px;
+        // }
+    }
+}
